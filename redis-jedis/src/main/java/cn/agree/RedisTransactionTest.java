@@ -21,7 +21,7 @@ public class RedisTransactionTest {
         try {
             multi.set("user1", result);
             multi.set("user2", result);
-            int i = 1/0;
+            // int i = 1/0;
             multi.exec();
         } catch (Exception e) {
             multi.discard();
