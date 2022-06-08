@@ -1,5 +1,7 @@
 package cn.agree.lesson;
 
+import cn.agree.pojo.Stu;
+
 public class StringTest01 {
     public static void main(String[] args) {
         String s1 = "fsjdkfjsk";
@@ -19,6 +21,11 @@ public class StringTest01 {
         // 分割方法
         String s2="aa|bb|cc";
         String[] strArray = s2.split("|");
+
+        System.out.println("------------------------------------");
+
+        Stu stu = new Stu();
+        System.out.println(stu.getClass());
 
 
 
