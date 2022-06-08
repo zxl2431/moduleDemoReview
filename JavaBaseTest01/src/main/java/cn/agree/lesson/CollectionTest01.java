@@ -10,7 +10,7 @@ public class CollectionTest01 {
         * Collection又分 List 有序可重复 和 Set 无序 唯一
         *
         * Collection的常用方法
-        *   add() clear() remove() contains() isEmpty() size() toArray() get(index) set(index, value)
+        *   add() clear() remove() contains() isEmpty() size() toArray()
         *
         * 迭代器 Iterator接口 也是集合中的一员
         *  Collection.iterator()
