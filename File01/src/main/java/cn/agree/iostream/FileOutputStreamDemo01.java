@@ -18,8 +18,8 @@ public class FileOutputStreamDemo01 {
         // 是否追加写入完全取决于 构造的时候 参数
         FileOutputStream fos1 = new FileOutputStream(file0_1, true);
 
-        FileOut0(fos);
-        // FileOut1(fos);
+        // FileOut0(fos);
+        FileOut1(fos);
         // FileOut2(fos1);
        // FileOut3(fos);
 
