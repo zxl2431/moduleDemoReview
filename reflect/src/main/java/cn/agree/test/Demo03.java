@@ -2,14 +2,17 @@ package cn.agree.test;
 
 import cn.agree.pojo.Student;
 
+import java.io.File;
 import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 public class Demo03 {
     public static void main(String[] args) throws Exception {
         // test01();
-        test02();
+        // test02();
+        test03();
     }
 
     /*
@@ -48,10 +51,26 @@ public class Demo03 {
         Method m2 = c.getDeclaredMethod("eat");
         m2.setAccessible(true);
         m2.invoke(student);
+    }
 
+    /*
+    *  获取成员变量
+    *
+    * */
+    public static void test03() throws Exception {
+        Class c = Student.class;
+        Student stu = (Student) c.newInstance();
 
+        Field f1 = c.getDeclaredField("gender");
+        f1.setAccessible(true);
+        f1.set(stu, "男");
 
+        String gender = (String) f1.get(stu);
+        System.out.println("性别:"+gender);
 
     }
+
+
+
 
 }
