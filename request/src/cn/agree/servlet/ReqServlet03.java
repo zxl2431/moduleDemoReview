@@ -32,5 +32,13 @@ public class ReqServlet03 extends HttpServlet{
         }
 
         System.out.println(user);
+
+        /*
+        *  请求转发
+        * */
+        System.out.println("对用户请求第一次处理");
+        req.setAttribute("user", user);
+        req.getRequestDispatcher("/req04").forward(req, resp);
+
     }
 }
