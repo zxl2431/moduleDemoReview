@@ -18,6 +18,8 @@ public class ReqServlet02 extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        // 这个东西必须放在第一行 有点意思
+        req.setCharacterEncoding("utf-8");
         /*
         *  1. 根据name属性 获取对应的值
         *
@@ -44,5 +46,12 @@ public class ReqServlet02 extends HttpServlet {
                 System.out.println(s);
             }
         }
+
+        System.out.println("-------------------------------------------");
+
+        // 处理post请求乱码
+        req.setCharacterEncoding("utf-8");
+        String username1 = req.getParameter("username");
+        System.out.println(username1);
     }
 }
