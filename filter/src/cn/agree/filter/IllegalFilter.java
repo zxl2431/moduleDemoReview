@@ -11,7 +11,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-@WebFilter(filterName = "IllegalFilter", urlPatterns = "/IllegalFilter")
+@WebFilter(filterName = "IllegalFilter", urlPatterns = "/IllegalServlet")
 public class IllegalFilter implements Filter {
 
     // 声明一个集合用来保存非法字符

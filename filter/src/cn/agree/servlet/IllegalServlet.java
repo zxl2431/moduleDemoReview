@@ -17,6 +17,7 @@ public class IllegalServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
         resp.getWriter().write("你的言论发表成功");
     }
 }

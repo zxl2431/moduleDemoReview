@@ -15,6 +15,7 @@ public class FiltereDemo03 implements Filter {
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         System.out.println("FiltereDemo03的doFilter执行了...");
+        filterChain.doFilter(servletRequest, servletResponse);
     }
 
     @Override

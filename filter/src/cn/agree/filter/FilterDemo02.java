@@ -5,7 +5,7 @@ import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
 import java.io.IOException;
 
-@WebFilter(filterName = "FilterDemo02", urlPatterns = "/*.jsp")
+@WebFilter(filterName = "FilterDemo02", urlPatterns = "/*")
 public class FilterDemo02 implements Filter {
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
